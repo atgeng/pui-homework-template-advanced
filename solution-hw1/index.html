@@ -1,15 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
-  <meta charset="UTF-8">
-  <title>Page Title</title>
-  
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cinnamon roll shop">
+    <meta name="keywords" content="Cinnamon, Cinnamon roll, Bakery, Bun Bun Bake Shop, Bake">
+    <meta name="author" content="Annie Geng">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bun Bun Bake Shop</title>
+  </head>
+
   <body>
+    <!-- header -->
+    <div id="header">
 
-    <h1>I am the solution to HW1!</h1>
+      <!-- logo -->
+      <div id="logo">
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop Logo" title="Bun Bun Bake Shop" class="logo">
+      </div>
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+      <!-- navbar -->
+      <div id="navbar">
+        <div id="nav-items">
+          <div id="nav-links">
+            <ul>
+              <li>
+                <a href="index.html">PRODUCTS</a>
+              </li>
+              <li>
+                <a href="index.html">CART</a>
+              </li>
+            </ul>
+          </div>
 
+          <!-- horizontal line -->
+          <div id="line">
+            <hr class="solid"/>
+          </div>
+        </div>
+
+        <!-- Our hand-made cinnamon rolls -->
+        <div id="slogan">
+          <h1 class="align-bottom">Our hand-made cinnamon rolls</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- product gallery -->
+    <div id="product-gallery">
+      
+      <!-- original cinnamon -->
+      <div class="menu-card">
+        <!-- image -->
+        <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" title="Original Cinnamon Roll" class="productimg"/>
+        <!-- heading -->
+        <h2>Original cinnamon roll</h2>
+        
+        <!-- glaze // source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/-->
+        <div class="flex-wrap">
+        <p>Glazing:</p>
+        <!-- dropdown button // source: https://www.freecodecamp.org/news/html-drop-down-menu-how-to-add-a-drop-down-list-with-the-select-element/ -->
+          <select name="glazing" class="glazing">
+            <option value="keeporiginal">Keep original</option>
+            <option value="sugarmilk">Sugar milk</option>
+            <option value="vanillamilk">Vanilla milk</option>
+            <option value="doublechocolate">Double chocolate</option>
+          </select>
+        </div>
+        
+        <!-- pack size -->
+        <div class="flex-wrap">
+          <p>Pack size:</p>
+          <!-- radio buttons // sources: https://www.youtube.com/watch?v=aDAadG8CU64
+            https://www.w3schools.com/howto/howto_css_custom_checkbox.asp-->
+          <div class="pack-size">
+            <input type="radio" checked="checked" id="1original" name="sizeoriginal" value="1original">
+            <label for="1original">1</label>
+            <input type="radio" id="3original" name="sizeoriginal" value="3original">
+            <label for="3original">3</label>
+            <input type="radio" id="6original" name="sizeoriginal" value="6original">
+            <label for="6original">6</label>
+            <input type="radio" id="12original" name="sizeoriginal" value="12original">
+            <label for="12original">12</label>
+          </div>
+        </div>
+        
+        <!-- cart -->
+        <div class="flex-wrap">
+          <h3>$2.49</h3>
+          <!-- add to cart button // source: https://www.w3schools.com/tags/tag_button.asp-->
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- apple cinnamon -->
+      <div class="menu-card">
+        <!-- image -->
+        <img src="../assets/products/apple-cinnamon-roll.jpg" alt="apple cinnamon roll" title="Apple Cinnamon Roll" class="productimg"/>
+        <!-- heading -->
+        <h2>Apple cinnamon roll</h2>
+        
+        <!-- glaze -->
+        <div class="flex-wrap">
+        <p>Glazing:</p>
+        <!-- dropdown button -->
+          <select name="glazing" class="glazing">
+            <option value="keeporiginal">Keep original</option>
+            <option value="sugarmilk">Sugar milk</option>
+            <option value="vanillamilk">Vanilla milk</option>
+            <option value="doublechocolate">Double chocolate</option>
+          </select>
+        </div>
+        
+        <!-- pack size -->
+        <div class="flex-wrap">
+          <p>Pack size:</p>
+          <!-- radio buttons -->
+          <div class="pack-size">
+            <input type="radio" checked="checked" id="1apple" name="sizeapple" value="1apple">
+            <label for="1apple">1</label>
+            <input type="radio" id="3apple" name="sizeapple" value="3apple">
+            <label for="3apple">3</label>
+            <input type="radio" id="6apple" name="sizeapple" value="6apple">
+            <label for="6apple">6</label>
+            <input type="radio" id="12apple" name="sizeapple" value="12apple">
+            <label for="12apple">12</label>
+          </div>
+        </div>
+        
+        <!-- cart -->
+        <div class="flex-wrap">
+          <h3>$3.49</h3>
+          <!-- add to cart button -->
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- raisin cinnamon -->
+      <div class="menu-card">
+        <!-- image -->
+        <img src="../assets/products/raisin-cinnamon-roll.jpg" alt="raisin cinnamon roll" title="Raisin Cinnamon Roll" class="productimg"/>
+        <!-- heading -->
+        <h2>Raisin cinnamon roll</h2>
+        
+        <!-- glaze -->
+        <div class="flex-wrap">
+        <p>Glazing:</p>
+        
+        <!-- dropdown button -->
+          <select name="glazing" class="glazing">
+            <option value="keeporiginal">Keep original</option>
+            <option value="sugarmilk">Sugar milk</option>
+            <option value="vanillamilk">Vanilla milk</option>
+            <option value="doublechocolate">Double chocolate</option>
+          </select>
+        </div>
+        
+        <!-- pack size -->
+        <div class="flex-wrap">
+          <p>Pack size:</p>
+          <!-- radio buttons -->
+          <div class="pack-size">
+            <input type="radio" checked="checked" id="1raisin" name="sizeraisin" value="1raisin">
+            <label for="1raisin">1</label>
+            <input type="radio" id="3raisin" name="sizeraisin" value="3raisin">
+            <label for="3raisin">3</label>
+            <input type="radio" id="6raisin" name="sizeraisin" value="6raisin">
+            <label for="6raisin">6</label>
+            <input type="radio" id="12raisin" name="sizeraisin" value="12raisin">
+            <label for="12raisin">12</label>
+          </div>
+        </div>
+        
+        <!-- cart -->
+        <div class="flex-wrap">
+          <h3>$2.99</h3>
+          <!-- add to cart button -->
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- walnut cinnamon -->
+      <div class="menu-card">
+        <!-- image -->
+        <img src="../assets/products/walnut-cinnamon-roll.jpg" alt="walnut cinnamon roll" title="Walnut Cinnamon Roll" class="productimg"/>
+        <!-- heading -->
+        <h2>Walnut cinnamon roll</h2>
+        
+        <!-- glaze -->
+        <div class="flex-wrap">
+        <p>Glazing:</p>
+        <!-- dropdown button -->
+          <select name="glazing" class="glazing">
+            <option value="keeporiginal">Keep original</option>
+            <option value="sugarmilk">Sugar milk</option>
+            <option value="vanillamilk">Vanilla milk</option>
+            <option value="doublechocolate">Double chocolate</option>
+          </select>
+        </div>
+        
+        <!-- pack size -->
+        <div class="flex-wrap">
+          <p>Pack size:</p>
+          <!-- radio buttons -->
+          <div class="pack-size">
+            <input type="radio" checked="checked" id="1walnut" name="sizewalnut" value="1walnut">
+            <label for="1walnut">1</label>
+            <input type="radio" id="3walnut" name="sizewalnut" value="3walnut">
+            <label for="3walnut">3</label>
+            <input type="radio" id="6walnut" name="sizewalnut" value="6walnut">
+            <label for="6walnut">6</label>
+            <input type="radio" id="12walnut" name="sizewalnut" value="12walnut">
+            <label for="12walnut">12</label>
+          </div>
+        </div>
+        
+        <!-- cart -->
+        <div class="flex-wrap">
+          <h3>$3.49</h3>
+          <!-- add to cart button -->
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- double chocolate cinnamon -->
+      <div class="menu-card">
+        <!-- image -->
+        <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll" title="Double Chocolate Cinnamon Roll" class="productimg"/>
+        <!-- heading -->
+        <h2>Double chocolate cinnamon roll</h2>
+       
+        <!-- glaze -->
+        <div class="flex-wrap">
+        <p>Glazing:</p>
+        <!-- dropdown button -->
+          <select name="glazing" class="glazing">
+            <option value="keeporiginal">Keep original</option>
+            <option value="sugarmilk">Sugar milk</option>
+            <option value="vanillamilk">Vanilla milk</option>
+            <option value="doublechocolate">Double chocolate</option>
+          </select>
+        </div>
+        
+        <!-- pack size -->
+        <div class="flex-wrap">
+          <p>Pack size:</p>
+          <!-- radio buttons -->
+          <div class="pack-size">
+            <input type="radio" checked="checked" id="1double" name="sizedouble" value="1double">
+            <label for="1double">1</label>
+            <input type="radio" id="3double" name="sizedouble" value="3double">
+            <label for="3double">3</label>
+            <input type="radio" id="6double" name="sizedouble" value="6double">
+            <label for="6double">6</label>
+            <input type="radio" id="12double" name="sizedouble" value="12double">
+            <label for="12double">12</label>
+          </div>
+        </div>
+        
+        <!-- cart -->
+        <div class="flex-wrap">
+          <h3>$3.99</h3>
+          <!-- add to cart button -->
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- strawberry cinnamon -->
+      <div class="menu-card">
+        <!-- image -->
+        <img src="../assets/products/strawberry-cinnamon-roll.jpg" alt="strawberry cinnamon roll" title="Strawberry Cinnamon Roll" class="productimg"/>
+        <!-- heading -->
+        <h2>Strawberry cinnamon roll</h2>
+        
+        <!-- glaze -->
+        <div class="flex-wrap">
+        <p>Glazing:</p>
+          <!-- dropdown button -->
+          <select name="glazing" class="glazing">
+            <option value="keeporiginal">Keep original</option>
+            <option value="sugarmilk">Sugar milk</option>
+            <option value="vanillamilk">Vanilla milk</option>
+            <option value="doublechocolate">Double chocolate</option>
+          </select>
+        </div>
+        
+        <!-- pack size -->
+        <div class="flex-wrap">
+          <p>Pack size:</p>
+          <!-- radio buttons -->
+          <div class="pack-size">
+            <input type="radio" checked="checked" id="1strawberry" name="sizestrawberry" value="1strawberry">
+            <label for="1strawberry">1</label>
+            <input type="radio" id="3strawberry" name="sizestrawberry" value="3strawberry">
+            <label for="3strawberry">3</label>
+            <input type="radio" id="6strawberry" name="sizestrawberry" value="6strawberry">
+            <label for="6strawberry">6</label>
+            <input type="radio" id="12strawberry" name="sizestrawberry" value="12strawberry">
+            <label for="12strawberry">12</label>
+          </div>
+        </div>
+        
+        <!-- cart -->
+        <div class="flex-wrap">
+          <h3>$3.99</h3>
+          <!-- add to cart button -->
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
